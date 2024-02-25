@@ -49,18 +49,18 @@
     font: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    :has(:target) {
-        scroll-behavior: smooth;
-        scroll-padding-top: 0;
-    }
+
+
+html, body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
 }
 
-/*@media (prefers-reduced-motion: no-preference) { // Use if i want backwards compatability.
-    html {
-        scroll-behavior: smooth;
+@media (prefers-reduced-motion: reduce) {
+    html, body {
+        scroll-behavior: auto;
     }
-}*/
+}
 
 html {
     font-size: 62.5%;
@@ -317,6 +317,7 @@ header .navigation ul {
     height: inherit;
     position: relative;
     padding: 0;
+    touch-action: manipulation;
 
     @media (min-width: 480px) {
         width: 100%;
