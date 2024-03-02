@@ -1,5 +1,15 @@
 /*Use the number 12 or it's lower divisors as a general guide to determine spacing of site (12, 6, 4, 3, 2, 1)*/
 
+/*
+Future tasks:
+
+- Add variables if needed.
+- Reduce media queries by taking advantage of rem containers and ems, minimise px.
+- Enhance and complete hover/touch animations if needed.
+- Create secondary menu for work section.
+- Further optimise images and video.
+*/
+
 /*Media Query reference*/
 /*
     @media (min-width: 240px) {}
