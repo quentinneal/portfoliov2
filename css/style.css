@@ -225,7 +225,7 @@ p a:hover {
 .header {
     position: fixed;
     bottom: 0;
-    z-index: 2;
+    z-index: 10;
     height: var(--header-height);
     width: 100%;
     display: flex;
@@ -564,7 +564,7 @@ video {
     }
     @media (min-width: 720px) {
         padding: 4.4rem 0 4.4rem 4.4rem;
-        height: calc(100svh - var(--header-height));
+        height: calc(100lvh - var(--header-height));
         position: sticky;
         top: 0;
     }
@@ -685,9 +685,10 @@ video {
 .work .work-container > img {
     position: sticky;
     top: 0;
+    z-index: 1;
 
     @media (min-width: 720px) {
-        height: calc(100svh - var(--header-height));
+        height: calc(100lvh - var(--header-height));
         object-fit: cover;
         object-position: top;
     } 
@@ -696,6 +697,7 @@ video {
 .work .work-container .description {
     background-color: rgba(0, 0, 0, 0.85);
     padding: 3.6rem;
+    z-index: 2;
 
     @media (min-width: 720px) {
         text-align: center;
